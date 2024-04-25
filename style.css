@@ -129,7 +129,7 @@ main .tall:hover{
   cursor: pointer;
   animation: bounce-tall 0.7s ease-in-out 0s infinite alternate;
 }
-label{
+label, button{
   display: none;
 }
 .dark-mode{
@@ -186,7 +186,7 @@ color: white;
   main{
     grid-template-columns: repeat(2, 1fr);
   }
-  label{
+  label, button{
     display: none;
   }
   
@@ -205,7 +205,7 @@ color: white;
     animation: bounce-tall 0.6s ease-in-out 0s infinite alternate;
   }
   
-  label{
+  label, button{
     display: none;
   }
   
@@ -237,10 +237,18 @@ header nav{
   }
   
   label{
-    display: block;
+    display: none;
     grid-column: 3/4;
     font-size: 2rem;
     columns: purple;
+    box-shadow: 3px 4px 4px rgba(0,0,0,0.04);
+  }
+button{
+    display: block;
+    grid-column: 3/4;
+    font-size: 2rem;
+    color: purple;
+    outline: none;
     box-shadow: 3px 4px 4px rgba(0,0,0,0.04);
   }
   main .articles-div{
