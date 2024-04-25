@@ -132,6 +132,11 @@ main .tall:hover{
 label{
   display: none;
 }
+.dark-mode{
+background-color: black;
+color: white;
+
+}
 /* .short-gif{
   grid-column: 2/3;
   grid-row: 5/6;
