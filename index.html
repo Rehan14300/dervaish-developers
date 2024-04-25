@@ -20,7 +20,8 @@
       </h1>
       <a class="guides common-nav-a" href="/">Guides</a>
       <a class="contact common-nav-a" href="/">Contacts</a>
-      <label for="checkbox"><i class='bx bx-menu'></i></label>
+     <--! <label for="checkbox"><i class='bx bx-menu'></i></label> -->
+          <button onlick="myFunction()"> Turn to Dark-Mode </button>
     </nav>
   </header>
   <main>
@@ -87,6 +88,11 @@
     window.addEventListener('click', () => {
       document.getElementById("bg-music").play();
     });
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
 
   </script>
   
